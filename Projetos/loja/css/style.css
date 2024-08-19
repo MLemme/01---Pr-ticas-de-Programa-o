@@ -1,0 +1,24 @@
+/*Seletor global*/
+*{
+	font-family: Arial,Helvetica,sans-serif;
+}
+/* (top) (right) (bottom) (left)*/
+/* (top bottom) (right left)*/
+/* (all sides)*/
+h1{
+	border: red dashed 5px;
+	margin: 30px 0;
+	padding: 30px 20px;
+	text-align: center;
+}
+#cifrao{
+	color: green;
+}
+footer{
+	background-color: #555544;
+	color: white;
+	padding: 20px;
+}
+.produto-item{
+	color: red;
+}
