@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+		
+			
+			
+			
+			//let contador = 1
+			const qtd = Number(prompt('Quantas repetições você deseja?'))
+			let soma = 0
+			let nota = 0
+			let media = 0
+			
+			for(let contador = 1; contador <= qtd; contador++){
+				nota = Number(prompt('Inserir Nota ' + contador + ' de ' + qtd + ' :'))
+				console.log('nota: ' + nota)
+				console.log(contador)
+				soma = Number(soma) + Number(nota)
+				console.log('soma: ' + soma)
+				console.log('contador: ' + contador)
+			}
+			/*
+			while(contador <= qtd){
+			
+				do{
+					nota = Number(prompt('Inserir Nota ' + contador + ' de ' + qtd + ' :'))
+				}while(nota > 10)
+								
+				console.log('nota: ' + nota)
+				console.log(contador)
+				soma = Number(soma) + Number(nota)
+				console.log('soma: ' + soma)
+				console.log('contador: ' + contador)
+				contador++
+			}
+			*/
+			media = soma / qtd
+			
+			console.log('A média é: ' + media)
+			
+			let mensagem = ''
+			
+			media >= 7 ? mensagem = 'Aprovado - média: ' + media : mensagem = 'Reprovado - média: ' + media;
+			
+			console.log(mensagem)
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

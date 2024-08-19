@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			const nomes = [
+							'Batman',
+							'Besouro',
+							'Coringa',
+							'Lobo'
+						]
+			const idades = [
+							40,
+							25,
+							38,
+							150
+						]
+						
+			console.table(nomes)
+			console.table(idades)
+			
+			//nos arrays multidimensionais, cada elemento é outro array
+			
+			const notas = [
+							[6,7,8,10],
+							[5,4,9,6],
+							[7,8,7,[8,10,9]]
+						]
+			console.table(notas)
+			
+			
+			console.log(nomes[0])
+			console.log(idades[2])
+			console.log(notas[1][2])
+			console.log(notas[2][3][0])
+			
+			
+			const nota = [] //array vazio
+			console.table(nota)
+			
+			const qtd = Number(prompt('Deseja inserir quantas notas?'))
+			
+			for(let i = 0; i < qtd; i++){
+				let novo = Number(prompt('Digite a nota:'))
+				nota.push(novo)		
+			}
+			console.table(nota)
+			
+			//array de objetos
+			const pessoa =  [
+								'Batman',
+								'Besouro',
+								'Coringa',
+								'Lobo'
+							]
+			const pessoas = [
+								{nome: 'Batman', cor: 'preto', tipo:'herói'},
+								{nome: 'Besouro', cor: 'azul', tipo:'herói'},
+								{nome: 'Coringa', cor: 'verde', tipo:'vilão'},
+								{nome: 'Lobo', cor: 'cinza', tipo:'antiherói'}
+							]
+			console.table(pessoas)
+			console.log(pessoas[2]['nome'])
+			//ou
+			console.log(pessoas[2].nome)
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

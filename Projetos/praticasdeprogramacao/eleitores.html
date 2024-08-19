@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			const anoVotacao = Number(prompt('Digite o ano do pleito:'))
+			const anoNascimento = Number(prompt('Ano de seu nascimento:'))
+			
+			const idade = anoVotacao - anoNascimento
+			
+			if(idade < 16){
+				console.log('Você não tem a idade mínima para votar. Idade: ' + idade + ' anos.')
+			}else if(idade >= 18 && idade < 65){
+				console.log('Você é obrigado a votar. Idade: ' + idade + ' anos.')
+			}else{
+				console.log('Você não é obrigado a votar, é facultativo. Idade: ' + idade + ' anos.')
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			//const valor = Number(prompt('Qual taboada gostaria de calcular?'))
+			let comp1 = ''
+			let comp2 = ''
+			
+				
+			for (let valor = 1; valor <= 10; valor++){
+				console.log('Taboada de ' + valor + ':')
+				for (let i = 1; i <= 10; i++){
+					if(i < 10){
+						comp1 = '0'
+					}else{
+						comp1 = ''
+					}
+					if(valor < 10){
+						comp2 = '0'
+					}else{
+						comp2 = ''
+					}
+					console.log(comp2 + valor + ' X ' + comp1 + i + " = " + valor*i)
+				}
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+	</body>
+</html>

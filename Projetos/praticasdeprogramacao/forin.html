@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			//Criação de objeto - Variavel complexa multivalorada
+			const pessoa = { 					//Variavel
+				nome: 'Testador',				//Atributos
+				telefone: '555-1010',
+				endereco: 'Rua dos Limoeiros'
+			}
+			//OS ATRIBUTOS SÃO LIDOS POR variavel.atributo ou variavel['atributo']
+			//exemplo:
+			//	console.log(pessoa.nome)
+			//	console.log(pessoa['telefone'])
+			
+			//Matrizes, Vetores ou Arrays
+			const carro = ['Gol','Focus','Virtus','Tracker']
+				
+			//for in - para navegar dentro de um objeto estruturado
+			for(let prop in pessoa){ //prop retornará o nome do elemento ou indice do mesmo
+				console.log(prop + " - " + pessoa[prop])
+			}
+			
+			//for of - para navegar arrays
+			for(let elemento of carro){ //elemento retornará o valor dentro do array
+				console.log(elemento)
+			}
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

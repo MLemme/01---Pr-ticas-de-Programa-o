@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		
+		<script type="text/javascript" src="js/funcoes.js"></script>		
+		
+		<script>
+			//Recursividade - chamada de funções dentro das próprias, criando loops infinitos com métodos de paradas 
+			//bem definidas, com intuito de substituir estruturas de repertição em soluções complexas
+			//exemplo de função recursiva
+			function fatorial(x){
+				if (x < 1){
+					return 1
+				}else{
+					return x * fatorial((x - 1))
+				}
+			}
+			
+			console.log(fatorial(5))
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1> CALCULADORA </h1>
+		</header>
+		<main>
+		<form action="">
+			N1: <input type="text" id="n1" />
+			<br>
+			N2: <input type="text" id="n2" /> 
+			<br>
+			<br>
+			<input type="button" value="Somar" onclick="calcular('+')"> 
+			<input type="button" value="Subtrair" onclick="calcular('-')"> 
+			<input type="button" value="Multiplicar" onclick="calcular('*')"> 
+			<input type="button" value="Dividir" onclick="calcular('/')"> 
+			<br>
+			<br>
+			<input type="button" value="Fatorial" onclick="calcular('!')"> 
+			<!-- ou pode usar a tag <button type="button">Somar</button> -->
+			
+			<h2 id="resultado"> O resultado é:  </h2>
+		
+		</form>
+		</main>
+	</body>
+</html>

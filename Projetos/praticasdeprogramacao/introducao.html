@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- HTML 5 TROUXE MAIS TAGS MELHORANDO SEMANTICAS -->
+<html>
+	<head> 
+		<meta charset="UTF-8" /> <!-- Meta informação de tipo de charcode -->
+		<title>Práticas de Programação</title> <!-- Dado de cabeçalho - texto da janela ou aba -->
+		
+		<!-- h2{                 --> <!-- Bloco ou Seletor do Elemento da Página -->
+		<!--		color: red;  --> <!-- propriedade -->
+		<!-- }                   -->
+		<!-- Tag que indica que o conteudo desta tag é a folha de estilo ou CSS -->
+		<!-- não pode colocar nada de html dentro da tag style ou CSS -->
+		
+		<!-- no lugar de usar a tag interna usar um arquivo CSS usando -->
+		
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!-- <style>
+		
+			body{
+				background-color: #2b0202;
+				color: white;
+				margin: 0;
+			}
+			h1, h2{
+				color: red;
+				text-align: center;				
+			}
+			h1{
+				text-transform: uppercase;
+			}
+			p{
+				text-align: justify;
+				
+			}
+			
+			header{
+				background-color: azure;
+				color: black;
+			}
+			
+			main{
+				margin: auto 20%;
+			}
+			
+			footer{
+				background-color: azure;
+				color: black;
+			}
+			
+			.destaque{
+				background-color: brown;
+				color: azure;
+				padding: 20px;
+				margin-bottom: 20px;
+			}
+			
+			#img-logo{
+				width: 50px;
+			}
+			
+			nav li{
+				display: inline;
+				margin-left: 20px;
+				color: #b61a1a;
+				font-weight: bold;
+				border: 2px solid #b61a1a;
+				padding: 5px;
+			}
+			
+			nav{
+				float: right;
+			}
+		</style> -->
+		<!-- w3schools também tem sa referências CSS -->
+		<!-- RGB -->
+		<!-- Escrevendo hexadecimal das cores:  # RR GG BB -->
+		<!-- 0 1 2 3 4 5 6 7 8 9 A B C D E F -->
+		
+		
+		<!-- ".algo" monta o nome da classe ou class de uma tag na folha de estilo -->
+		<!-- padding -> propriedade para criar espaço entre o elemento e a borda da borda para dentro -->
+		<!-- margin -> propriedade para criar espaço entre o elemento e a borda da borda para fora -->
+		<!-- px é pixel, unidade de medida permitida -->
+		<!-- usando seletor por id, onde este valor é unico por elemento, sendo utilizado como "#id" -->
+		<!-- se colocar a tag header antes do objeto no seletor, somente o objeto do header é afetado -->
+	</head>
+	<body> <!-- bgcolor="black" -->
+		<!-- <font color="white"> -->
+		<header><!-- TAG HTML 5 - INDICA O CABEÇALHO DA PÁGINA PARA O INDEXADOR -->
+		
+		<img id="img-logo" src="img/avatar.bmp" alt="logo IPqM"/> <!-- Imagem --><!-- Assim como meta está tag é auto contida não precisa tag de fechamento -->
+		<!-- Alt auxilia na acessibilidade sendo exibido em caso de falha do caminho da imagem -->
+		<nav><!-- TAG HTML 5 - INDICA O MENU OU NAVEGADOR (NAVIGATR) PARA O INDEXADOR -->
+			<ul> <!-- Unorder List ou Lista não odernada ou lista de pontos -->
+				
+				<li>HTML</li> <!-- List item ou itens da lista -->
+				<li>CSS</li>
+				<li>Lógica de Programação</li>
+				<li>Java Script</li>
+				
+			</ul>
+		</nav>
+		
+		</header>
+		
+		<main><!-- TAG HTML 5 - INDICA O CORPO PRINCIPAL DA PÁGINA PARA O INDEXADOR -->
+		
+		<!-- pode se usar o atributo style de um único elemento usando a propriedade style -->
+		
+		<h1 style="color:gold;" >Práticas de Programação</h1> <!-- Titulo --><!-- Head, define tamanho de texto do maior para o menor indo de 1 à 6, sendo 6 a menor -->
+		<p class="destaque">Bem vindos ao curso de Práticas de Programação</p> <!-- Parágrafo -->
+		<p>
+			lore ipsulum monte de informação rase inutil só para ter uma parágrafo enorme como um receita de bolo ou de miojo o melhor é o de tomatinho
+		</p>
+		<p>
+			lore ipsulum monte de informação rase inutil só para ter uma parágrafo enorme como um receita de bolo ou de miojo o melhor é o de tomatinho
+		</p>
+		<!-- <h2>Imagem</h2> --> <!-- Subtitulo -->
+		
+		
+		<hr> <!-- Pula linha -->
+		
+		<h2 class="destaque">Link</h2> <!-- Subtitulo -->
+		<p>
+			Clique <a target="_blank" href="http://google.com">aqui</a> para acessar o Google			<!-- Link ou Ancora --> <!-- http para links extenos --> <!-- Todo texto é clicavel --><!-- Hyperlink -->
+			<!-- Target - _blank = nova aba -->
+		</p>
+		
+		<h2>Listas</h2> <!-- Listas são estruturas de tópico -->
+		
+		<ol type="A"><!-- Order List ou Lista ordenada ou lista com números -->
+			<!-- type altera o tipo de carcter indexador da lista -->
+			<!-- A para letras maiusculas -->
+			<!-- a para letras minusculas -->
+			<!-- etc -->
+			<li>HTML</li> <!-- List item ou itens da lista -->
+			<li>CSS</li>
+			<li>Lógica de Programação</li>
+			<li>Java Script</li>
+		</ol>
+		
+		</main>
+		
+		<footer><!-- TAG HTML 5 - INDICA O RODAPÉ DA PÁGINA PARA O INDEXADOR -->
+			<p> Todos os direitos reservados </p>
+		</footer>
+		
+		<!-- LOCALIZAÇÃO DE DICAS DE HTML -> SITE W3SCHOOLS -->
+		<!-- </font> -->
+	</body>
+</html>

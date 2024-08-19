@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			/*const vetor = ['Alfa',1,'Beta',2,'Charlie',3,'Delta'] //Arrays não precisam ser do mesmo tipo
+			console.table(vetor) //Apresenta uma tabela no console para melhor visualizar um vetor
+			
+			const teste = new Array('Uno','Dois',1,2) //outro método de criação de arrays
+			
+			for(let i of vetor){
+				console.log(i)
+			}
+			
+			for(let i = 0; i < 4; i++){
+				console.log(vetor[i])
+			}
+			
+			*/
+			//arrays são dinamicos e podem ser alterados o tempo todo
+			
+			const carros = [
+				'Gol',
+				'Ka',
+				'Palio',
+				'Mustang'
+			]
+			
+			console.table(carros)
+			
+			carros.push('Variant') // método para adicionar itens ao final
+			
+			console.table(carros)
+			
+			carros.unshift('Del Rey') // método para adicionar itens ao início
+			
+			console.table(carros)
+			
+			
+			//retirar itens do array
+			//pelo final
+			carros.pop()
+			console.table(carros)
+			
+			let pai = carros.pop()
+			console.table(carros)
+			console.log(pai) //estas funções de retirada retornam o elemento retirado, podendo ser armazenadas em outra variavel
+			
+			//pelo início
+			let velho = carros.shift()
+			console.table(carros)
+			console.log(velho) //estas funções de retirada retornam o elemento retirado, podendo ser armazenadas em outra variavel
+			
+			//carros.shift()
+			//onsole.table(carros)
+			
+			//carros.shift()
+			//console.table(carros)
+			
+			//splice - baseado no item
+			//excluir item específico no array
+			carros.splice(0,1) //(posicao inicial indice, quantidade de items a serem excluidos)
+			console.table(carros)
+			//adicionar item especifico no array
+			carros.splice(0,0,'Gol G IV') //(posicao inicial indice, quantidade de items a serem excluidos, novo item)
+			console.table(carros)					
+			//substituir ou alterar elementos no meio do array
+			carros.splice(1,1,'Ford Ka Velho') //(posicao inicial indice, quantidade de items a serem excluidos, novo item)
+			console.table(carros)
+			
+			//sort - ordenamento do array
+			//ordem alfabética
+			carros.sort()
+			console.table(carros)
+			
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

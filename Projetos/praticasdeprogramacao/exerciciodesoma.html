@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Meu segundo JAVA SCRIPT</title>
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Notas de Aula
+			=======================================================
+			Comentarios é igual ao C++ // e /* */
+			
+			Conversão string para inteiro, função parseInt
+			Conversão string para flutante, função parseFloat
+			Conversão string para número, função Number
+			=======================================================
+		-->
+		<script>
+			
+			/*
+			//Passo 1 - Entrada de dados
+			const n1 = prompt('Digite o número 1:')
+			const n2 = prompt('Digite o número 2:')
+			
+			//Passo 2 - Processamento (cálculos)
+			const soma = Number(n1) + Number(n2)
+			*/
+			/*
+				Operador + serve tanto para somar quanto concatenar
+			*/
+			/*
+			//Passo 3 - Saída de dados
+			console.log("A soma é " + soma)
+			*/
+			
+			 
+			function somar(){ //Só executa quando chamada
+				const n1 = document.getElementById('n1').value //camel case // função para pegar valor do html de um objeto pelo Id
+				const n2 = document.getElementById('n2').value
+				
+				const soma = Number(n1) + Number(n2)
+				
+				const resultado = document.getElementById('resultado')
+				
+				resultado.innerHTML =  "O resultado é: " + soma
+				
+				//alert ("O resultado da Soma de N1 e N2 é: " + soma)
+			}
+		</script>
+		
+	</head>
+	<body>
+		<!-- formulário -->
+		<form action="">
+			N1: <input type="text" id="n1" /> <!-- value é atributo que pode ser inicializado -->
+			<br>
+			N2: <input type="text" id="n2" /> 
+			<br>
+			<input type="button" value="Somar" onclick="somar()"> 
+			<!-- ou pode usar a tag <button type="button">Somar</button> -->
+			
+			<h1 id="resultado"> O resultado é:  </h1>
+		
+		</form>
+		
+		
+	
+	</body>
+</hmtl>

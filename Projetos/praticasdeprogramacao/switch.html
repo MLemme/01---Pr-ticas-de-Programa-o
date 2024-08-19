@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8" />
+		<title>Práticas de Programação</title>			
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<script>
+			/*
+				Verificar o aumento de salário de acordo com alguns cargos
+				cargo		aumento ou valor
+				Estagiário	100%
+				Analista	50%
+				Gerente		30%
+				Presidente	10%
+			*/
+		
+			const cargo = prompt('Digite um cargo:');
+			const salário = 1000.56;
+			let aumento = 0;
+			
+			switch(cargo){
+				case 'Estagiário':
+					aumento = 100;
+					break;
+				case 'Analista':
+					aumento = 50;
+					break;
+				case 'Gerente':
+					aumento = 30;
+					break;
+				case 'Presidente':
+					aumento = 10;
+					break;
+				default: aumento = 'Entrada inválida';
+			};
+			
+			console.log(salário + (salário * (aumento/100)))
+			
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>
